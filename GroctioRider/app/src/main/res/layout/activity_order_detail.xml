@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data></data>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.OrderDetailActi">
+
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    app:cardCornerRadius="@dimen/dp_5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/bold_text_view"
+                            android:padding="@dimen/dp_10"
+                            android:text="Order ID: CRNldskjflsk"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/black"/>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            style="@style/order_detail_text_view_style"
+                            android:text="Hemant Jangid"
+                            android:drawableLeft="@drawable/ic_user"
+                            android:textSize="@dimen/sp_16"
+                            android:textColor="@color/black"/>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <TextView
+                            style="@style/order_detail_text_view_style"
+                            android:text="+91 9509787937"
+                            android:drawableLeft="@drawable/ic_mobile"
+                            android:textSize="@dimen/sp_16"/>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtPickAdd"
+                                style="@style/order_detail_text_view_style"
+                                android:text="65 ShivaNager 5th, Near New Delhi Ajmer Bypass Road, Jaipur (302013)"
+                                android:drawableLeft="@drawable/ic_shop" />
+                            
+                            <TextView
+                                style="@style/normal_text_view"
+                                android:layout_width="wrap_content"
+                                android:padding="@dimen/dp_10"
+                                android:text="@string/pickup"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/sp_16"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtDestination"
+                                style="@style/order_detail_text_view_style"
+                                android:text="65 ShivaNager 5th, Near New Delhi Ajmer Bypass Road, Jaipur (302013)"
+                                android:drawableLeft="@drawable/ic_house" />
+
+                            <TextView
+                                style="@style/normal_text_view"
+                                android:layout_width="wrap_content"
+                                android:padding="@dimen/dp_10"
+                                android:text="@string/drop"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/sp_16"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtDate"
+                                style="@style/order_detail_text_view_style"
+                                android:text="25 Aug 2019"
+                                android:drawableLeft="@drawable/ic_calendar" />
+
+                            <View
+                                android:layout_width="@dimen/dp_1"
+                                android:layout_height="match_parent"
+                                android:background="@color/Grey_300"/>
+
+                            <TextView
+                                android:id="@+id/txtTime"
+                                style="@style/order_detail_text_view_style"
+                                android:text="01:25 PM"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:drawableLeft="@drawable/ic_clock" />
+
+                        </LinearLayout>
+
+                        <View style="@style/grey_horizontal_line_style"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/txtTotal"
+                                style="@style/order_detail_text_view_style"
+                                android:text="1150"
+                                android:drawableLeft="@drawable/ic_india_rupee" />
+
+                            <TextView
+                                android:id="@+id/txtPaymentType"
+                                style="@style/normal_text_view"
+                                android:layout_width="wrap_content"
+                                android:padding="@dimen/dp_10"
+                                android:text="@string/cash"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/sp_16"
+                                android:textColor="@color/green"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

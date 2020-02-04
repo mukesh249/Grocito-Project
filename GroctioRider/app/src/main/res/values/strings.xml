@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Groction Rider</string>
+
+    <string name="google_key">AIzaSyDdI9Au-yloIs1B3ny2LWl24NwTd5F5dN8</string>
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="Rs">Rs.</string>
+
+    <string name="api_hiting">Please wait…</string>
+
+    <string name="network_error_msg">Sorry! Not connected to internet</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="let_s_start">Let\'s Start</string>
+
+    <string name="name_error_msg">Name length minimum 1 characters.</string>
+    <string name="error_name_blank">Name should not be blank</string>
+    <string name="error_user_name_blank">User Name should not be blank</string>
+    <string name="only_special_characters_not_allowed_name">Only special characters are not allowed in name.</string>
+    <string name="only_special_characters_not_allowed">Only special characters are not allowed in user name.</string>
+    <string name="only_special_characters_not_allowed_in_firm">Only special characters are not allowed in firm name.</string>
+    <string name="only_numbers_not_allowed_in_firm">Only numbers are not allowed in firm name.</string>
+    <string name="only_numbers_not_allowed_name">Only numbers are not allowed in name.</string>
+    <string name="only_numbers_not_allowed">Only numbers are not allowed in user name.</string>
+    <string name="error_email_blank"> Email should not be blank</string>
+    <string name="enter_valid_email">Please enter valid Email.</string>
+    <string name="error_mobile_number_wrong">Please enter valid mobile number</string>
+    <string name="error_zip_code_wrong">Please enter valid zipcode</string>
+    <string name="error_amount_wrong">Please enter valid amount</string>
+    <string name="error_password_pattern">Password should be 6-15 characters long</string>
+    <string name="error_password_match">Passowrd is not match</string>
+
+    <string name="internet_connection_not_found">Can\'t reach our servers. Please check your Internet connection.</string>
+    <string name="no_internet_connection_available">No Internet Connection available.</string>
+
+    <string name="error_mobile_number_blank"> Mobile number should not be blank</string>
+    <string name="error_zip_code_blank"> ZipCode should not be blank</string>
+    <string name="error_password_blank"> Password should not be blank</string>
+    <string name="error_old_password_blank"> Old Password should not be blank</string>
+    <string name="Ok">Ok</string>
+    <string name="Are_you_sure_to_logout">Do you want to logout?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="Please_BACK_again_to_exit">Please BACK again to exit</string>
+
+    <!--Login Screen Strings-->
+
+    <string name="phone_number">Phone Number</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login_using_otp">Login Using OTP</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Slider Screen Strings-->
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="points_collected">Points Collected :</string>
+    <string name="home">Home</string>
+    <string name="today_order_s">Today Order\'s</string>
+    <string name="today_payment">Today Payment</string>
+    <string name="your_earning">Your Earning</string>
+    <string name="payment_report">Payment Report</string>
+    <string name="paid">Paid</string>
+    <string name="unpaid">Unpaid</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="orders_history">Order History</string>
+    <string name="today_s_payment">Today\'s Payment</string>
+    <string name="todays_s_orders">Todays\'s Orders</string>
+    <string name="insentive">Insentive</string>
+    <string name="cod_order_list">COD Order List</string>
+    <string name="logout">Logout</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="order_no">Order No.</string>
+    <string name="fare">Fare :</string>
+
+    <!--Home Screen Strings-->
+
+    <string name="inactive">Inactive</string>
+    <string name="active">Active</string>
+    <string name="pickup_">Pickup :</string>
+    <string name="user_detail">User Detail</string>
+    <string name="accept">Accept</string>
+    <string name="click_toll_fee_images">Click Toll Fee Images</string>
+    <string name="call_user">Call User</string>
+    <string name="pickup">Pickup</string>
+    <string name="en_route">En route</string>
+    <string name="signature">Signature</string>
+    <string name="upload_chalan_and_cargo">Upload Challan and Cargo</string>
+    <string name="complete_order">Complete Order</string>
+    <string name="order">Order</string>
+    <string name="user_details">User Details</string>
+    <string name="submit">Submit</string>
+    <string name="add_comment">Add Comment...</string>
+    <string name="rating">Rating</string>
+
+    <!--Chat Screen Strings-->
+
+    <string name="type_your_message">Type Your Message</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="help">Help &amp; Support</string>
+    <string name="destination">Destination</string>
+    <string name="delivery">Delivery</string>
+    <string name="contact_on_below_details">Contact to Below Details to purchase LPG</string>
+    <string name="signup">Sign Up</string>
+    <string name="delivered">Delivered</string>
+    <string name="order_id">Order Id:</string>
+    <string name="time">Time:</string>
+    <string name="status">Status:</string>
+    <string name="total">Total:</string>
+    <string name="total_amount">Total Amount:</string>
+    <string name="name_">Name:</string>
+    <string name="address">Address:</string>
+    <string name="oty">Qty</string>
+    <string name="cost">Cost</string>
+    <string name="instruction">Instruction</string>
+    <string name="start_for_delivery">Start for delivery</string>
+    <string name="reached_at_destination">Reached at destination</string>
+    <string name="rate">Rate</string>
+    <string name="how_is_your_experience">How is your experience ?</string>
+    <string name="write_here">Write Here</string>
+    <string name="drop_">Drop :</string>
+    <string name="please_enter_registered_mobile_number">Please Enter registered \n mobile number</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="todays_payment">Today\'s Payment</string>
+    <string name="todays_orders">Today\'s Orders</string>
+    <string name="commission_wallet">Commission Wallet</string>
+    <string name="drop">Drop</string>
+    <string name="cash">Cash</string>
+    <string name="order_details">Order Details</string>
+    <string name="notification">Notification</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="drop_off">Drop Off</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="order_list">Order List</string>
+    <string name="settings">Settings</string>
+    <string name="new_order">New Order</string>
+    <string name="reject">Reject</string>
+    <string name="empty_noti">We\'ll let you know we\'ve gone something new for you</string>
+
+
+    <array name="nav_drawer_items">
+        <item>@string/home</item>
+        <item>@string/profile</item>
+        <item>@string/commission_wallet</item>
+        <item>@string/todays_payment</item>
+        <item>@string/todays_orders</item>
+        <item>@string/orders_history</item>
+        <!--<item>@string/help</item>-->
+        <!--<item>@string/terms</item>-->
+        <item>@string/logout</item>
+    </array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="login_to_your_naccount">Login to your \nAccount</string>
+    <string name="phone_verification">Phone \nVerification</string>
+    <string name="accept_the_terms_and_condition">Accept the Terms and Condition</string>
+    <string name="sign_in">Sign In</string>
+    <string name="bonus_amount">Bonus Amount</string>
+    <string name="complete_delivery">COMPLETE DELIVERY</string>
+</resources>

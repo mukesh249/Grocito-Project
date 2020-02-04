@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/md_grey_200"
+        tools:context=".activities.Payment">
+
+        <include
+            android:id="@+id/headlyaout"
+            layout="@layout/header_layout"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/headlyaout"
+            android:layout_above="@+id/bottomLL"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardViewLight">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="center"
+                            android:text="@string/delivery_address"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            android:id="@+id/userNameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/meadium_txtView"
+                            android:gravity="start"
+                            android:text="Mukesh Sharma"/>
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:layout_marginStart="@dimen/_5sdp"
+                           android:id="@+id/addRecyclerView"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           tools:listitem="@layout/address_item"
+                           tools:itemCount="1"/>
+                        <Button
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_35sdp"
+                            android:layout_marginEnd="@dimen/_35sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:id="@+id/changeAddressTv"
+                            style="@style/button_light_radius"
+                            android:padding="@dimen/_7sdp"
+                            android:background="@drawable/round_conner_primary"
+                            android:textColor="@color/white"
+                            android:text="@string/add_change_address"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/deliveryTypRl"
+                    android:background="@drawable/white_round_grayborder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:text="Delivery Date &amp; Time"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/tabLL"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:background="@drawable/greyborder"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="17sp"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:id="@+id/standardTv"
+                            android:text="@string/standard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:textSize="17sp"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:id="@+id/express"
+                            android:text="@string/express"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <com.github.jhonnyx2012.horizontalpicker.HorizontalPicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textSize="17sp"
+                        android:paddingBottom="@dimen/_20sdp"
+                        android:id="@+id/expressViewTv"
+                        android:text="@string/order_will_be_delivered_within_45_minutes_n_between_9am_to_8pm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:id="@+id/TimeLL"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/timeRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/timeslot_item"
+                            tools:itemCount="3"/>
+                    </LinearLayout>
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/doneTv"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:text="@string/done"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardViewLight">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_bottom_sheet_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="center"
+                            android:text="@string/payment"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="0dp"
+                            android:paddingStart="@dimen/_15sdp"
+                            android:paddingEnd="@dimen/_15sdp"
+                            android:paddingBottom="@dimen/_15sdp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxWallet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Use Grocito Wallet(Rs.10)" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/total_payable"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/totalPayableTv"
+                                    android:gravity="end"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Rs.0"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/delivery_charges"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/deliveryChargeTv"
+                                    android:gravity="end"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="+Rs.0"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/walletV"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/md_grey_300"/>
+                            <LinearLayout
+                                android:id="@+id/walletLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/grocito_wallet"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/walletAmountTv"
+                                    android:gravity="end"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="-Rs.0"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/md_grey_300"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Amount Payable(incl. of all Taxes)"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/amountTv"
+                                    android:gravity="end"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Rs.0"
+                                    android:layout_height="wrap_content"/>
+                            </LinearLayout>
+                            <View
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_marginBottom="@dimen/_3sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/md_grey_300"/>
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+                                style="@style/small_txtView"
+                                android:textStyle="bold"
+                                android:gravity="start"
+                                android:text="@string/payment_method"/>
+                            <RadioButton
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:id="@+id/razorpayRadioBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="@string/razorpay"/>
+                            <RadioButton
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:id="@+id/codRadioBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="@string/cod_cash_of_delivery"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_below="@+id/card3"
+                    android:id="@+id/LL1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/shield"
+                        android:tint="@color/gray"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"/>
+                    <TextView
+                        android:textColor="@color/gray"
+                        android:gravity="start"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        style="@style/small_txtView"
+                        android:textSize="15sp"
+                        android:text="Safe and Secure Payments. Easy Returns.\n100% Authentic Products"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomLL"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="gone"
+                android:id="@+id/paynowBtn"
+                android:text="@string/pay_now"
+                android:textAllCaps="true"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                style="@style/button_light_radius" />
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/matrial_Progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicator="LineScale"
+                app:indicator_color="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

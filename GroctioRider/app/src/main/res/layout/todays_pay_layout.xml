@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/txtOrderId"
+                    style="@style/normal_text_view"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"/>
+
+                <TextView
+                    android:id="@+id/txtMobile"
+                    style="@style/normal_text_view"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/txtPrice"
+                style="@style/normal_text_view"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/black"
+                android:text="Rs. 150"/>
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

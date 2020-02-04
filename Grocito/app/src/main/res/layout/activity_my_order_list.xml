@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MyOrderList">
+
+    <data></data>
+
+    <RelativeLayout
+        android:gravity="center_vertical|top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_200"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/headlyaout"
+            layout="@layout/header_layout" />
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/matrial_Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicator="LineScale"
+            app:indicator_color="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@id/headlyaout"
+            android:id="@+id/emptyLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/emptyIv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/empty_cart"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/emptyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Order List Is Empty.\n Start Shopping now"/>
+            <Button
+                android:id="@+id/continueshopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_conner_primary"
+                android:layout_margin="@dimen/_35sdp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/continue_shopping" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/headlyaout"
+            android:visibility="gone"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/myorder_list_item"/>
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data></data>
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg"
+        tools:context="grocito.wingstud.groctiodriver.activity.WalletActi">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                style="@style/normal_text_view"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/commission_wallet"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtBalance"
+                style="@style/normal_text_view"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Rs."
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/toolbar_transparent"
+            android:id="@+id/toolbar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_below="@id/llTop"/>
+
+    </RelativeLayout>
+
+</layout>

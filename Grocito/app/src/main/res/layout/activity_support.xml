@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.SupportActivity">
+    <data></data>
+
+    <LinearLayout
+        android:background="@color/md_grey_200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/headlyaout"
+            layout="@layout/header_layout"/>
+
+
+        <LinearLayout
+            android:id="@+id/callRequestLl"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/white_round_grayborder"
+            android:padding="@dimen/_7sdp"
+            android:gravity="center"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_request"/>
+            <ImageView
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@android:drawable/ic_menu_call"
+                android:tint="@color/black"/>
+        </LinearLayout>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/matrial_Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicator="LineScale"
+            app:indicator_color="@color/colorPrimaryDark" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/emptyLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/emptyIv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/compl_empty"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/emptyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Complain Box Empty.\n We are so Happy."/>
+            <ImageView
+                android:id="@+id/happyIv"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/happy_a"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            tools:listitem="@layout/raising_compl_item"
+            />
+    </LinearLayout>
+</layout>

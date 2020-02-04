@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">Grocito</string>
+
+    <string name="facebook_app_id">764885463947781</string>
+    <string name="fb_login_protocol_scheme">fb764885463947781</string>
+    <string name="razorpay_key">rzp_live_3Psac1T1qEddGl</string>
+
+    <string name="api_hiting">Please wait…</string>
+    <string name="network_error_msg">Sorry! Not connected to internet</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="supermarket_in_n_your_mobile">Supermarket in \nyour mobile</string>
+    <string name="lorem_ipsum">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="grocito_provided_door_step_delivery">Grocito provided \nDoor step delivery</string>
+    <string name="easy_payment_option_to_pay">Easy payment \noption to pay</string>
+    <string name="sign">Sign</string>
+    <string name="please_enter_registered_mobile_number">Please Enter registered \n mobile number</string>
+    <string name="login_using_otp">Login using otp</string>
+    <string name="fruits_vegetables"><![CDATA[Fruits & Vegetables]]></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_cleaning">Home Cleaning</string>
+    <string name="abouviewtv">Cadbury Bournvita is a delicious chocolate health drink which is enriched with Vitamin (D,B2,B9,B12). It combines the great taste of chocolate, and goodness of essential nutrients that aid growth and development. Bournvita is a malted chocolate drink mix that can be enjoyed piping hot or deliciously cold. Try blending Bournvita with milk and ice cream to make a chocolate milkshake that is delectable and nutritious</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="about_this_product">About this Product</string>
+    <string name="about">About</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_and_condition">Term And Condition</string>
+    <string name="pack_sizes">Select Pack Sizes</string>
+    <string name="similar_products">Similar Products</string>
+    <string name="save_for_later">Save for Later</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="_89">89</string>
+    <string name="promo_code_can_be_applied_on_payment_page">Promo code can be applied on payment page</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="done">Done</string>
+    <string name="standard">Standard</string>
+    <string name="express">Express</string>
+    <string name="_10_00_am_12_00_pm">10:00 AM - 12:00 PM</string>
+    <string name="_12_00_am_02_00_pm">12:00 AM - 02:00 PM</string>
+    <string name="_02_00_am_04_00_pm">02:00 AM - 04:00 PM</string>
+    <string name="order_will_be_delivered_within_45_minutes_n_between_9am_to_8pm">Order will be delivered within 45 minutes \n between 9AM to 8PM</string>
+    <string name="home">Home</string>
+    <string name="my_account">My Account</string>
+    <string name="sell_on_grocito">Sell on Grocito</string>
+    <string name="suggest_a_new">Suggest a new product</string>
+    <string name="shop_by_cat">Shop by category</string>
+    <string name="cancel_return">Cancellations and Returns</string>
+    <string name="customer_services">Customer Services</string>
+    <string name="notification">Notification</string>
+    <string name="faqs">FAQs</string>
+    <string name="logout">Logout</string>
+    <string name="my_order">My Order</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="refer_earm">Refer And Earn</string>
+    <string name="my_profile">My Profile</string>
+    <string name="support">Support</string>
+    <string name="add_change_address"><![CDATA[Add & Change Address]]></string>
+    <string name="delivery_date_time"><![CDATA[Delivery Date & Time]]></string>
+    <string name="change">Change</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="paytm_wallet">Paytm Wallet</string>
+    <string name="cod_cash_of_delivery">COD (cash of delivery)</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="place_order">Place Order</string>
+    <string name="success_order">Success Order</string>
+    <string name="thank_you_for_shoping">Thank you for shopping</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="payment">Payment</string>
+    <string name="add_address">Add Address</string>
+    <string name="update_address">Update Address</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="enter_first_name">*Enter first name</string>
+    <string name="contact_number_to_say_hello">*Contact number to say hello</string>
+    <string name="address_details">Address Details</string>
+    <string name="house_number">*House Number</string>
+    <string name="apartment_name">Apartment name</string>
+    <string name="street_detail_to_locate_you">Street Detail to locate you</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="office">Office</string>
+    <string name="other">Other</string>
+    <string name="choose_nick_name_for_this_address">Choose nick name for this address</string>
+    <string name="nick_name_this_address_as">Nick name this address as</string>
+    <string name="set_this_as_my_default_delivery_address">Set this as my default delivery address</string>
+    <string name="add_new_address">"Add New Address"</string>
+    <string name="edit_address">"Edit Address"</string>
+    <string name="my_delivery_address">My Delivery Address</string>
+    <string name="raising_complaints">Raising Complaints</string>
+    <string name="Please_BACK_again_to_exit">Please BACK again to exit</string>
+
+    <string-array name="capcity_array">
+        <item>500gm</item>
+        <item>1kg</item>
+        <item>2kg</item>
+        <item>5kg</item>
+        <item>10kg</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>Jaipur</item>
+        <item>Kota</item>
+        <item>Bikaner</item>
+        <item>Ajmer</item>
+        <item>Tonk</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Categories</string>
+    <string name="offers">Offers</string>
+    <string name="cart">Cart</string>
+    <string name="Ok">Ok</string>
+    <string name="Are_you_sure_to_logout">Do you want to logout?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="choose_current_location">Choose current location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="search_for_you_delivery_locatin">Search for you delivery locatin</string>
+    <string name="user_this_location">User this Location</string>
+    <string name="seeall">SeeAll</string>
+    <string name="search_for_products">Search for Products</string>
+    <string name="_1">1</string>
+    <string name="phone_number">Phone number</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="up">" up"</string>
+    <string name="email_id">Email id</string>
+    <string name="name">Name</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="otp">OTP</string>
+    <string name="an_otp_has_been_sent_to_your_registered_mobile_number">An OTP has been sent to your registered mobile number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="email">*Email</string>
+    <string name="mobile_number">*Mobile Number</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="enter_last_name">*Enter last name</string>
+    <string name="product_details">Product Details</string>
+    <string name="select_seller">Select Seller</string>
+    <string name="select_color">Select Color</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="razorpay">Razorpay</string>
+    <string name="flat_house_office_no">Flat/House/Office No.</string>
+    <string name="street_society_office_name">Street/Society/Office Name</string>
+    <string name="state">State</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="please_wait_n_don_t_press_back_button_and_cancel">Please Wait... \n Don\'t Press Back Button And Cancel</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="sgst_amount">SGST Amount</string>
+    <string name="cgst_amount">CGST Amount</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="total">Total</string>
+    <string name="delivery_slot">Delivery Slot</string>
+    <string name="delivery_type">Delivery Type</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="order_status">Order Status</string>
+    <string name="update">Update</string>
+    <string name="add_wallet_amount">Add Wallet Amount</string>
+    <string name="available_amount">Available Amount</string>
+    <string name="grocito_wallet">Grocito Wallet</string>
+    <string name="referral_wallet">Referral Wallet</string>
+    <string name="copy_url">Copy Url</string>
+    <string name="share_your_referral_link">Share Your Referral Link</string>
+    <string name="share_on_social_media">Share On Social Media</string>
+    <string name="share_with_facebook">Share With FaceBook</string>
+    <string name="share_with_whatsapp">Share with WhatsApp</string>
+    <string name="share_with_email">Share with Email</string>
+    <string name="refer_a_friend">REFER A FRIEND</string>
+    <string name="refer_a_friend_des">Are you a social magnet? Earn some money by telling your friends about Payoneer. \n
+
+Get started by logging in to your Payoneer account. Spread the word by sharing your unique sign up link through blog posts, articles, emails, Facebook posts and tweets. You’ll get paid for every new friend that signs up to Payoneer through your link.</string>
+    <string name="email_address">Email Address</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="close">Close</string>
+    <string name="call_request">Call Request</string>
+    <string name="check_availability">Check Availability</string>
+    <string name="check_pincode">Check PinCode</string>
+    <string name="enter_pincode">Enter PinCode</string>
+</resources>
